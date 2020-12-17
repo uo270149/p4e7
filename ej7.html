@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Sofía Suárez Fernández UO270149" />
+    <meta name="description" content="P4-Ejercicio7. Base de datos de temática libre." />
+    <title>Ejercicio 7</title>
+    <link rel="stylesheet" href="Ejercicio7.css" />
+</head>
+
+<body>
+    <h1>Gestión UniOvi</h1>
+
+    <nav>
+        <ul>
+            <li><a href="#baseEncabezado" title="Crear Base">Crear Base de Datos</a></li>
+            <li><a href="#insertarEncabezado" title="Insertar Datos">Insertar datos</a></li>
+            <li><a href="#buscarEncabezado" title="Buscar Datos">Buscar datos en una tabla</a></li>
+            <li><a href="#eliminarEncabezado" title="Eliminar Datos">Eliminar datos de una tabla</a></li>
+        </ul>
+    </nav>
+
+    <!-- CREAR BASE -->
+    <h2 id="baseEncabezado">Crear Base de Datos</h2>
+    <p>Crear base de datos</p>
+    <form class="formBase" action='#' method='post'>
+        <input type='submit' title="crearbase" class='button' name='crearBBDD' value="Crear BBDD" />
+    </form>
+
+    <!-- INSERTAR DATOS -->
+    <h2 id="insertarEncabezado">Insertar Datos</h2>
+    <p>Insertar datos en una tabla de la base</p>
+    <form class="formBase" action='#' method='post'>
+        <!-- DEPARTAMENTO -->
+        <p>DEPARTAMENTO</p>
+        <p>Nombre del departamento:<input type="text" title="nombredep" class="text" name="nombreDep" /> </p>
+        <p>Ubicación del departamento:<input type="text" title="ubicaciondep" class="text" name="ubicacionDep" /> </p>
+        <input type='submit' class='button' name='insertarDep' title="insertardep" value='Insertar Datos Departamento' />
+
+        <!-- FACULTAD -->
+        <p>FACULTAD</p>
+        <p>Nombre de la facultad:<input type="text" title="nombrefac" class="text" name="nombreFac" /> </p>
+        <p>Ubicación del departamento:<input type="text" title="ubicacionfac" class="text" name="ubicacionFac" /> </p>
+
+        <input type='submit' class='button' title="insertarfac" name='insertarFac' value='Insertar Datos Facultad' />
+
+        <!-- DOCENTE -->
+        <p>DOCENTE</p>
+        <p>Nombre del docente:<input type="text" title="nombredoc" class="text" name="nombreDoc" /> </p>
+        <p>Apellidos del docente:<input type="text" title="apellidosdoc" class="text" name="apellidosDoc" /> </p>
+        <p>Edad del docente:<input type="text" title="edaddoc" class="text" name="edadDoc" /> </p>
+        <p>Sexo del docente:<input type="text" title="sexodoc" class="text" name="sexoDoc" /> </p>
+        <p>ID departamento del docente:<input type="text" title="iddep" class="text" name="idDep" /> </p>
+        <p>ID Facultad del docente:<input type="text" title="idfac" class="text" name="idFac" /> </p>
+        <input type='submit' class='button' title="insertardoc" name='insertarDoc' value='Insertar Datos Docente' />
+    </form>
+
+    <!-- BUSCAR DATOS -->
+    <h2 id="buscarEncabezado">Buscar Datos</h2>
+    <p>Buscar datos en una tabla de la base de datos</p>
+    <form class="formBase" action='#' method='post'>
+        <p>Mostrar datos almacenados:
+            <input type='submit' title="buscar" class='button' name='buscar' value="Mostrar Datos" /></p>
+    </form>
+
+    <!-- ELIMINAR DATOS -->
+    <h2 id="eliminarEncabezado">Eliminar Datos</h2>
+    <p>Eliminar datos de una tabla de la base de datos</p>
+    <form class="formBase" action='#' method='post'>
+        <p>ID a eliminar:<input type="text" class="text" id="id" /></p>
+
+        <input type='submit' title="deletedep" class='button' name='deleteDep' value="Eliminar Departamento" />
+        <input type='submit' title="deletefac" class='button' name='deleteFac' value="Eliminar Facultad" />
+        <input type='submit' title="deletedoc" class='button' name='deleteDoc' value="Eliminar Docente" />
+    </form>
+
+    
+    <footer>
+        <p>Autor: Sofía Suárez Fernández. Universidad de Oviedo. Software y Estándares para la Web</p>
+        <a href="http://validator.w3.org/check/referer" hreflang="en-us">
+            <img src="valid-html5-button.png" alt="¡HTML5 válido!" height="31" width="88" /></a>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="¡CSS Válido!" /></a>
+    </footer>
+</body>
+
+</html>

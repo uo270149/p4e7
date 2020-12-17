@@ -1,0 +1,74 @@
+/* especificidad=1 */
+
+body {
+    background-color: cornsilk;
+    font-family: sans-serif;
+}
+
+
+/* especificidad=1 */
+
+h1 {
+    text-align: left;
+    color: black;
+}
+
+
+/* especificidad=1 */
+
+h2 {
+    text-align: left;
+    color: black;
+}
+
+
+/* especificidad=3 */
+
+nav ul li {
+    list-style-type: none;
+    margin: 0.625em;
+    border-radius: 0.625em;
+    font-weight: bold;
+    font-size: 100%;
+    text-align: left;
+}
+
+
+/* especificidad=1 */
+
+p {
+    margin-top: 1em;
+    margin-bottom: 0.1em;
+}
+
+
+/* especificidad=1 */
+
+ul {
+    text-align: left;
+}
+
+
+/* especificidad=1 */
+
+li {
+    display: block;
+}
+
+
+/* especificidad=100 */
+
+#confirm {
+    color: crimson;
+    font-weight: bold;
+    text-align: left;
+}
+
+
+/* especificidad #formbase=100; especificidad footer=1 */
+
+.formbase,
+footer {
+    margin-top: 2em;
+    text-align: left;
+}
